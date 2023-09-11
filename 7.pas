@@ -11,7 +11,7 @@ begin
   end;
   
   min:=a;
-  if min>b then min:=b
-  else if min>c then min:=c;
+  if min>b then min:=b;
+  if min>c then min:=c;
   write('Наименьшее число: ', min);
 end.
