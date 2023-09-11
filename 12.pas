@@ -18,8 +18,8 @@ begin
   end;
   
   if (x1>0) and (y1>0) and (x2>0) and (y2>0) then write('Точки совместно лежат в 1 четверти')
-  else if (x1>0) and (y1>0) and (x2>0) and (y2>0) then write('Точки совместно лежат в 2 четверти')
-  else if (x1>0) and (y1>0) and (x2>0) and (y2>0) then write('Точки совместно лежат в 3 четверти')
-  else if (x1>0) and (y1>0) and (x2>0) and (y2>0) then write('Точки совместно лежат в 4 четверти')
+  else if (x1<0) and (y1>0) and (x2<0) and (y2>0) then write('Точки совместно лежат в 2 четверти')
+  else if (x1<0) and (y1<0) and (x2<0) and (y2<0) then write('Точки совместно лежат в 3 четверти')
+  else if (x1>0) and (y1<0) and (x2>0) and (y2<0) then write('Точки совместно лежат в 4 четверти')
   else write('Точки не лежат совместно');
 end.
