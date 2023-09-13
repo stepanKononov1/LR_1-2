@@ -3,6 +3,7 @@ var x: integer;
 begin
   write('Введите не дробное число: ');
   read(x);
-  x:= (x div 10) * 10 + (x div 10);
-  write('Прибавлен нуль перед младшим разрядом: ', x*10);
+  if (x mod 10) = 0 then x:=x*10
+  else x := (x div 10) * 100 + (x mod 10);
+  writeln('Прибавлен нуль перед младшим разрядом: ', x);
 end.
